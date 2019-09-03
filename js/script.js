@@ -131,21 +131,25 @@ displays.forEach(
     );
 }
      
+
+
+window.onload = function(){
 //покрасим скорость 
 var elements = document.querySelectorAll('.box .box-items .option .speed') ;
 
-for (var i = 0; i < elements.length; i++) {
-    switch (elements[i].innerHTML) {
-    case '50 Мбит/с':
-        elements[i].style.backgroundColor = '#70603e';
-        break;
-    case '100 Мбит/с':
-        elements[i].style.backgroundColor = '#0075d9';
-        break;
-    case '200 Мбит/с':
-        elements[i].style.backgroundColor = '#e74807';
-        break;
-    default:
-        elements[i].style.backgroundColor = '#111';
+    for (var i = 0; i < elements.length; i++) {
+        switch (elements[i].innerHTML) {
+        case '50 Мбит/с':
+            elements[i].style.backgroundColor = '#70603e';
+            break;
+        case '100 Мбит/с':
+            elements[i].style.backgroundColor = '#0075d9';
+            break;
+        case '200 Мбит/с':
+            elements[i].style.backgroundColor = '#e74807';
+            break;
+        default:
+            elements[i].style.backgroundColor = '#111';
+        }
     }
 }
